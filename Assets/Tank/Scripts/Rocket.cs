@@ -8,8 +8,4 @@ public class Rocket : MonoBehaviour
         GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * force, ForceMode.VelocityChange);
     }
 
-    void Update()
-    {
-        
-    }
 }
