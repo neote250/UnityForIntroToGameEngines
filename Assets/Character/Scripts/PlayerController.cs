@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] PlayerData data;
     [SerializeField] Transform view;
     [SerializeField] Animator animator;
+    [SerializeField] StringEvent loadLevelEvent;
 
     CharacterController characterController;
 
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
     Vector3 velocity = Vector3.zero;
 
     bool isSprinting = false;
+    public Transform View { get => view; set => view = value; }
 
     void Start()
     {
@@ -104,6 +106,11 @@ public class PlayerController : MonoBehaviour
 		animator.SetFloat("Speed", new Vector3(velocity.x, 0, velocity.z).magnitude);
 		animator.SetFloat("AirSpeed", characterController.velocity.y);
 		animator.SetBool("OnGround", onGround);
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            loadLevelEvent.RaiseEvent("Roller");
+        }
     }
     void OnMove(InputAction.CallbackContext callbackContext)
     {

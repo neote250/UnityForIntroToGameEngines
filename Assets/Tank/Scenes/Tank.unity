@@ -356,8 +356,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1 &53514481
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,6 +1278,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 3
   destroyOnHit: 1
+  damageableLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  hitFxPrefab: {fileID: 0}
+  damageRate: 0.1
 --- !u!23 &223532097
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1588,8 +1596,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1 &294080007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1765,8 +1776,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
-  destroyFX: {fileID: 0}
-  player: {fileID: 294080007}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1001 &295104158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1862,7 +1876,7 @@ RectTransform:
   m_Father: {fileID: 252479308}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2118,8 +2132,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1001 &316538135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2265,8 +2282,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1001 &328692379
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2350,8 +2370,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1 &365534648
 GameObject:
   m_ObjectHideFlags: 0
@@ -2492,8 +2515,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1001 &371532422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2639,8 +2665,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1 &389720747
 GameObject:
   m_ObjectHideFlags: 0
@@ -2980,8 +3009,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!4 &471869609 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9036010317549907051, guid: d6ce4274b26708b40987c3132f682af3, type: 3}
@@ -3075,8 +3107,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1001 &505772234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3160,8 +3195,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1001 &533812014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3312,8 +3350,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!4 &590633877 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9036010317549907051, guid: fd4474d7a31d8964e976682c77d68dcb, type: 3}
@@ -3397,6 +3438,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 3
   destroyOnHit: 1
+  damageableLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  hitFxPrefab: {fileID: 0}
+  damageRate: 0.1
 --- !u!23 &590988386
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3658,8 +3704,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1 &644183073
 GameObject:
   m_ObjectHideFlags: 0
@@ -3929,8 +3978,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1001 &655098414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4014,8 +4066,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1 &659168652
 GameObject:
   m_ObjectHideFlags: 0
@@ -4156,8 +4211,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1001 &663954706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4746,8 +4804,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1001 &755128142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4883,6 +4944,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 3
   destroyOnHit: 1
+  damageableLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  hitFxPrefab: {fileID: 0}
+  damageRate: 0.1
 --- !u!23 &778619953
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4985,8 +5051,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!114 &786847193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5176,8 +5245,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1 &816793289
 GameObject:
   m_ObjectHideFlags: 0
@@ -5371,8 +5443,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!4 &841097857 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4340330282522542, guid: 43cecf02ca9a29341aa80150e36f4c3d, type: 3}
@@ -5523,8 +5598,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1001 &862539819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5608,8 +5686,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!4 &872654373 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4340330282522542, guid: 43cecf02ca9a29341aa80150e36f4c3d, type: 3}
@@ -5755,8 +5836,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1 &900421769
 GameObject:
   m_ObjectHideFlags: 0
@@ -5897,8 +5981,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1001 &921525234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5982,8 +6069,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1001 &927316749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6190,7 +6280,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &940631088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6456,7 +6546,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -6724,8 +6814,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1001 &981420020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7188,8 +7281,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1001 &1049554793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7273,8 +7369,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1001 &1076986557
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7393,6 +7492,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 3
   destroyOnHit: 1
+  damageableLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  hitFxPrefab: {fileID: 0}
+  damageRate: 0.1
 --- !u!23 &1081828151
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7571,8 +7675,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1001 &1089585993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8241,8 +8348,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1001 &1194618420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8393,8 +8503,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1 &1218786650
 GameObject:
   m_ObjectHideFlags: 0
@@ -8902,8 +9015,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!114 &1344201765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9175,8 +9291,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!114 &1357383800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9366,8 +9485,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1 &1361166554
 GameObject:
   m_ObjectHideFlags: 0
@@ -9668,8 +9790,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1 &1416381141
 GameObject:
   m_ObjectHideFlags: 0
@@ -9885,6 +10010,55 @@ Transform:
   - {fileID: 195495148}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1488475744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1488475746}
+  - component: {fileID: 1488475745}
+  m_Layer: 0
+  m_Name: Global Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1488475745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488475744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 36c96413f4606a44caa1ddaee58aa375, type: 2}
+--- !u!4 &1488475746
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488475744}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 38.324986, y: 7.366116, z: -5.1359015}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1490132720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9968,8 +10142,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1 &1505203472
 GameObject:
   m_ObjectHideFlags: 0
@@ -10446,8 +10623,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1001 &1591663425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10666,8 +10846,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1615964056}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -11009,8 +11189,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1001 &1674818793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11623,8 +11806,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1001 &1835611219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11708,8 +11894,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1001 &1857047862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11793,8 +11982,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!4 &1861149226 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4340330282522542, guid: 43cecf02ca9a29341aa80150e36f4c3d, type: 3}
@@ -12343,8 +12535,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1 &1935123054
 GameObject:
   m_ObjectHideFlags: 0
@@ -12472,8 +12667,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!114 &1970082737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12757,6 +12955,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 3
   destroyOnHit: 1
+  damageableLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  hitFxPrefab: {fileID: 0}
+  damageRate: 0.1
 --- !u!23 &1993070133
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12908,8 +13111,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!4 &2032940659 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4340330282522542, guid: 43cecf02ca9a29341aa80150e36f4c3d, type: 3}
@@ -13117,8 +13323,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  destroyFX: {fileID: 0}
-  player: {fileID: 0}
+  maxHealth: 100
+  destroyFxPrefab: {fileID: 0}
+  onDestroyed: {fileID: 0}
+  onScored: {fileID: 0}
+  ScoreData: {fileID: 0}
 --- !u!1001 &2129706618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13314,3 +13523,4 @@ SceneRoots:
   - {fileID: 590988388}
   - {fileID: 1210511}
   - {fileID: 389720752}
+  - {fileID: 1488475746}
